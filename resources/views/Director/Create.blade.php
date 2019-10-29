@@ -1,5 +1,5 @@
-
-
+@extends("Tema/layout")
+@section('content')
 <form class="form-horizontal" method="POST" action="/Director/store">
     @csrf
     <div class="form-group">
@@ -28,3 +28,4 @@
 </div>
 <button type="submit" value="Guardar"></button>
 </form>
+@endsection

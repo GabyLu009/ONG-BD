@@ -1,3 +1,6 @@
+@extends("Tema/layout")
+@section('content')
+
 <table >
     <thead>
     <tr>
@@ -18,3 +21,4 @@
           </tr>
         @endforeach
   </table>  
+  @endsection
