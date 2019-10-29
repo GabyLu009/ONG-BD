@@ -1,31 +1,44 @@
 @extends("Tema/layout")
 @section('content')
-<form class="form-horizontal" method="POST" action="/Director/store">
-    @csrf
-    <div class="form-group">
-           <label for="Nombre" class="col-sm-2 control-label">Nombre Director </label>
-           <div class="col-sm-10">
-                 <input type="text" name="nombre" id="nombre">
-           </div>
-    </div>
-    <div class="form-group">
-        <label for="Apellido1" class="col-sm-2 control-label">Apellido1 </label>
-        <div class="col-sm-10">
-              <input type="text" name="apellido1" id="apellido1">
-        </div>
- </div>
- <div class="form-group">
-    <label for="Apellido2" class="col-sm-2 control-label">Apellido 2 </label>
-    <div class="col-sm-10">
-          <input type="text" name="apellido2" id="apellido2">
-    </div>
+<div class="animated fadeIn">
+      <div class="row">
+                  <div class="col-lg-6">
+                              <div class="card">
+                                  <div class="card-header">
+                                      <strong>Crear Director</strong>
+                                  </div>
+                                  <div class="card-body card-block">
+                                    <form class="form-horizontal" method="POST" action="/Director/store" class="form-horizontal">
+                                      @csrf
+                                          <div class="row form-group">
+                                                <div class="col col-md-3"><label for="Nombre" class=" form-control-label">Nombre</label></div>
+                                              <div class="col-12 col-md-9"><input type="text" id="nombre" name="nombre" class="form-control"></div>
+                                          </div>
+                                          <div class="row form-group">
+                                                      <div class="col col-md-3"><label for="Primer Apellido" class=" form-control-label">Primer Apellido</label></div>
+                                                    <div class="col-12 col-md-9"><input type="text" id="apellido1" name="apellido1" class="form-control"></div>
+                                          </div>
+                                          <div class="row form-group">
+                                                      <div class="col col-md-3"><label for="Segundo Apellido" class=" form-control-label">Segundo Apellido</label></div>
+                                                    <div class="col-12 col-md-9"><input type="text" id="apellido2" name="apellido2" class="form-control"></div>
+                                         </div>
+                                         <div class="row form-group">
+                                                <div class="col col-md-3"><label for="Cedula" class=" form-control-label">Identificacion</label></div>
+                                              <div class="col-12 col-md-9"><input type="text" id="cedula" name="cedula" class="form-control"></div>
+                                         </div>
+                                    
+                                  </div>
+                                  <div class="card-footer">
+                                      <button type="submit" class="btn btn-primary btn-sm">
+                                          <i class="fa fa-dot-circle-o"></i> Guardar
+                                      </button>
+                                      <button type="reset" class="btn btn-danger btn-sm">
+                                          <i class="fa fa-ban"></i> Borrar
+                                      </button>
+                                  </div>
+                              </form>
+                              </div>
+                          </div>
+      </div> 
 </div>
-<div class="form-group">
-    <label for="Cedula" class="col-sm-2 control-label">Cedula</label>
-    <div class="col-sm-10">
-          <input type="text" name="cedula" id="cedula">
-    </div>
-</div>
-<button type="submit" value="Guardar"></button>
-</form>
 @endsection

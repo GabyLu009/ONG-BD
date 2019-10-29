@@ -20,7 +20,7 @@
 
 
     <link rel="stylesheet" href="{{asset("Plantilla/assets/css/style.css")}}">
-
+    <link href='cdn.datatables.net/plug-ins/1.10.20/i18n/Spanish.json'>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800' rel='stylesheet' type='text/css'>
     @yield('styles')
 </head>
@@ -37,6 +37,6 @@
     <script src="{{asset("Plantilla/vendors/bootstrap/dist/js/bootstrap.min.js")}}"></script>
     <script src="{{asset("Plantilla/assets/js/main.js")}}"></script> 
    
-@yield('Script')
+@yield('scripts')
 </body>
 </html>
