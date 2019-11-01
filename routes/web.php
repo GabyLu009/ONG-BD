@@ -18,4 +18,7 @@ Route::group(['prefix' => '/'], function () {
     Route::get('Director', 'DirectorController@index');
     Route::get('Director/create', 'DirectorController@create');
     Route::post('Director/store', 'DirectorController@store');
+    Route::get('Director/{Director}/edit', 'DirectorController@edit')->name('director_edit');
+    Route::put('Director/{Director}','DirectorController@update');
+    Route::delete('Director/{id}','DirectorController@delete')->name('director_delete');
 });
