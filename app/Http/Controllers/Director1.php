@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Director;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use App\Models\Director;
 use Illuminate\Support\Facades\DB;
 
-class DirectorController extends Controller
+class Director1 extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +16,8 @@ class DirectorController extends Controller
      */
     public function index()
     {
-       $director = Director::orderby('idDirector')->get();
-       return view('Director.Index',compact('director'));
+        $director = Director::orderby('identificacion')->get();
+        return view('Director.Index',compact('director'));
     }
 
     /**
@@ -37,18 +38,17 @@ class DirectorController extends Controller
      */
     public function store(Request $request)
     {
-        
-       $ac= DB::insert("call INSERT_DIRECTOR('$request->nombre','$request->apellido1','$request->apellido2','$request->cedula')");
+        DB::insert("call INSERT_DIRECTOR('$request->identificacion','$request->nombre','$request->apellido1','$request->apellido2')");
         return redirect('Director');
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Director  $director
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Director $director)
+    public function show($id)
     {
         //
     }
@@ -56,34 +56,40 @@ class DirectorController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Director  $director
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(Director $director)
+    public function edit($id)
     {
-        //
+        $dir = Director::find($id);
+        return view('Director/Edit',compact('dir'));
     }
 
     /**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Director  $director
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Director $director)
+    public function update(Request $request, $id)
     {
-        //
+        DB::update("call UPDATE_DIRECTOR('$request->identificacion','$request->nombre','$request->apellido1','$request->apellido2')");
+        return redirect('Director');
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Director  $director
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Director $director)
+    public function destroy($id)
     {
-        //
+        //$dir =Director::find($id);
+        //$dir->delete();
+       
+        DB::delete("call DELETE_DIRECTOR('$id')");
+        return redirect('Director');
     }
 }
