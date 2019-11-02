@@ -28,11 +28,11 @@
                                          </div>
                                   </div>
                                   <div class="card-footer">
-                                      <button type="submit" class="btn btn-primary btn-sm">
-                                          <i class="fa fa-dot-circle-o"></i> Guardar
-                                      </button>
                                       <button type="reset" class="btn btn-danger btn-sm">
                                           <i class="fa fa-ban"></i> Borrar
+                                      </button>
+                                      <button type="submit" class="btn btn-primary btn-sm">
+                                          <i class="fa fa-dot-circle-o"></i> Guardar
                                       </button>
                                   </div>
                               </form>
