@@ -19,11 +19,11 @@
               <div class="card">
                   <div class="card-header">
                     <div class="col-md-3 pull-right">
-                      <strong class="card-title">Pais</strong>
+                      <strong class="card-title">Actuación</strong>
                     </div>
                       <div class="col-md-3" style="margin-left:50%">
-                            <a href="{{route('pais_create')}}" class="btn btn-block btn-primary">
-                                    <i class="fa fa-fw fa-plus-circle"></i> Crear pais
+                            <a href="{{route('actuacion_create')}}" class="btn btn-block btn-primary">
+                                    <i class="fa fa-fw fa-plus-circle"></i> Crear actuación
                             </a>
                           </div>
                   </div>
@@ -31,22 +31,26 @@
                       <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
                           <thead>
                               <tr>
-                                  <th>Id pais</th>
-                                  <th>Nombre</th>
-                                  <th>Nacionalidad </th>
+                                <th>Id actuacion</th>
+                                  <th>Inversión</th>
+                                  <th>Descripcion</th>
+                                  <th>Id de la poblacion </th>
+                                  <th>Codigo p</th>
                                   <th>Acciones</th>
                               </tr>
                           </thead>
                           <tbody>
-                              @foreach ($pais as $item)
+                              @foreach ($actuacion as $item)
                               <tr>
-                              <td>{{$item->idpais}}</td>    
-                              <td>{{$item->nombre}}</td>
-                              <td>{{$item->nacionalidad}}</td>
+                             <td>{{$item->idactuacion}}</td>
+                              <td>{{$item->inversion}}</td>    
+                              <td>{{$item->descripcion}}</td>
+                              <td>{{$item->idPoblacion}}</td>
+                              <td>{{$item->codigoP}}</td>
                               <td>
-                                <a href="/Pais/{{$item->idpais}}/edit" class="btn btn-success">
+                                <a href="/actuacion/{{$item->idactuacion}}/edit" class="btn btn-success">
                                     <i class="fa fa-pencil"></i></a>
-                                <form action="{{route('pais_delete', ['Pais' => $item->idpais])}}" method="POST">
+                                <form action="{{route('actuacion_delete', ['Poblacion' => $item->idactuacion])}}" method="POST">
                                   @csrf <input name="_method" type="hidden" value="DELETE">
                                   <button type="submit" class="btn btn-danger">
                                       <i class="fa fa-trash"></i>

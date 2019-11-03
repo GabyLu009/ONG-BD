@@ -61,10 +61,10 @@ class ProyectoController extends Controller
      * @param  \App\Models\Proyecto  $proyecto
      * @return \Illuminate\Http\Response
      */
-    public function edit(Proyecto $proyecto)
+    public function edit($id)
     {
         //
-        $pro =  Proyecto::find($proyecto);
+        $pro =  Proyecto::find($id);
         return view('Proyecto/Edit',compact('pro'));
     }
 
@@ -88,10 +88,10 @@ class ProyectoController extends Controller
      * @param  \App\Models\Proyecto  $proyecto
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Proyecto $proyecto)
+    public function destroy($id)
     {
         //
-        DB::delete("call DELETE_PROYECTO('$proyecto')");
+        DB::delete("call DELETE_PROYECTO('$id')");
         return redirect('Proyecto');
     }
 }

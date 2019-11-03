@@ -8,5 +8,5 @@ class Responsable extends Model
 {
     //
     protected $table = 'RESPONSABLE';
-    protected $primaryKey ='';
+    protected $primaryKey ='IDENTIFICACION';
 }

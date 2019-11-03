@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Actuacion;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ActuacionController extends Controller
 {
@@ -15,6 +16,8 @@ class ActuacionController extends Controller
     public function index()
     {
         //
+        $actuacion = Actuacion::orderby('idactuacion')->get();
+        return view('Actuacion.Index',compact('actuacion'));
     }
 
     /**
@@ -25,6 +28,7 @@ class ActuacionController extends Controller
     public function create()
     {
         //
+        return view('Actuacion.Create');
     }
 
     /**
@@ -36,6 +40,8 @@ class ActuacionController extends Controller
     public function store(Request $request)
     {
         //
+        DB::insert("call INSERT_ACTUACION('$request->inversion','$request->descripcion','$request->idpoblacion','$request->codigop')");
+        return redirect('Actuacion');
     }
 
     /**
@@ -55,9 +61,11 @@ class ActuacionController extends Controller
      * @param  \App\Models\Actuacion  $actuacion
      * @return \Illuminate\Http\Response
      */
-    public function edit(Actuacion $actuacion)
+    public function edit($id)
     {
         //
+        $act = Actuacion::find($id);
+        return view('Actuacion/Edit',compact('act'));
     }
 
     /**
@@ -70,6 +78,8 @@ class ActuacionController extends Controller
     public function update(Request $request, Actuacion $actuacion)
     {
         //
+        DB::update("call UPDATE_ACTUACION('$request->idactuacion','$request->inversion','$request->descripcion','$request->idpoblacion','$request->codigop')");
+        return redirect('Actuacion');
     }
 
     /**
@@ -78,8 +88,10 @@ class ActuacionController extends Controller
      * @param  \App\Models\Actuacion  $actuacion
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Actuacion $actuacion)
+    public function destroy($id)
     {
         //
+        DB::delete("call DELETE_ACTUACION('$id')");
+        return redirect('Actuacion');
     }
 }

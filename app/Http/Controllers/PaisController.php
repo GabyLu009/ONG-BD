@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Pais;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PaisController extends Controller
 {
@@ -15,6 +16,8 @@ class PaisController extends Controller
     public function index()
     {
         //
+        $pais = Pais::orderby('idpais')->get();
+        return view('Pais.Index',compact('pais'));
     }
 
     /**
@@ -25,6 +28,7 @@ class PaisController extends Controller
     public function create()
     {
         //
+        return view('Pais.Create');
     }
 
     /**
@@ -36,6 +40,8 @@ class PaisController extends Controller
     public function store(Request $request)
     {
         //
+        DB::insert("call INSERT_PAIS('$request->nombre','$request->nacionalidad')");
+        return redirect('Pais');
     }
 
     /**
@@ -55,9 +61,11 @@ class PaisController extends Controller
      * @param  \App\Models\Pais  $pais
      * @return \Illuminate\Http\Response
      */
-    public function edit(Pais $pais)
+    public function edit($id)
     {
         //
+        $pai = Pais::find($id);
+        return view('Pais/Edit',compact('pai'));
     }
 
     /**
@@ -70,6 +78,8 @@ class PaisController extends Controller
     public function update(Request $request, Pais $pais)
     {
         //
+        DB::update("call UPDATE_PAIS('$request->idpais','$request->nombre','$request->nacionalidad')");
+        return redirect('Pais');
     }
 
     /**
@@ -78,8 +88,10 @@ class PaisController extends Controller
      * @param  \App\Models\Pais  $pais
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Pais $pais)
+    public function destroy($id)
     {
         //
+        DB::delete("call DELETE_PAIS('$id')");
+        return redirect('Pais');
     }
 }

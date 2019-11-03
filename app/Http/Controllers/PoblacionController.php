@@ -40,7 +40,7 @@ class PoblacionController extends Controller
     public function store(Request $request)
     {
         //
-       DB::insert("call INSERT_POBLACION('$request->idpoblacion','$request->numerohabitantes','$request->nombre','$request->idpais')");
+       DB::insert("call INSERT_POBLACION('$request->numerohabitantes','$request->nombre','$request->idpais')");
         return redirect('Poblacion');
     }
 
@@ -61,10 +61,10 @@ class PoblacionController extends Controller
      * @param  \App\Models\Poblacion  $poblacion
      * @return \Illuminate\Http\Response
      */
-    public function edit(Poblacion $poblacion)
+    public function edit($id)
     {
         //
-        $pob = Poblacion::find($poblacion);
+        $pob = Poblacion::find($id);
         return view('Poblacion/Edit',compact('pob'));
     }
 
@@ -88,10 +88,10 @@ class PoblacionController extends Controller
      * @param  \App\Models\Poblacion  $poblacion
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Poblacion $poblacion)
+    public function destroy($id)
     {
         //
-        DB::delete("call DELETE_POBLACION('$poblacion')");
+        DB::delete("call DELETE_POBLACION('$id')");
         return redirect('Poblacion');
     }
 }

@@ -11,10 +11,10 @@
                                     <form class="form-horizontal" method="POST" action="/Sede/store" class="form-horizontal">
                                       @csrf
 
-                                      <div class="row form-group">
+                                      {{-- <div class="row form-group">
                                         <div class="col col-md-3"><label for="Idsede" class=" form-control-label">Id sede </label></div>
                                       <div class="col-12 col-md-9"><input type="text" id="idsede" name="idsede" class="form-control"></div>
-                                      </div>
+                                      </div> --}}
                                   <div class="row form-group">
                                     <div class="col col-md-3"><label for="Identificaciond" class=" form-control-label">Identificación </label></div>
                                   <div class="col-12 col-md-9"><input type="text" id="identificaciond" name="identificaciond" class="form-control"></div>

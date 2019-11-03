@@ -53,8 +53,6 @@
                               <td>{{$item->idsede}}</td> 
                               <td>{{$item->identificacionr}}</td>
                               <td>{{$item->estado}}</td> 
-                             
-
                               <td>
                                 <a href="/Proyecto/{{$item->codigo}}/edit" class="btn btn-success">
                                     <i class="fa fa-pencil"></i></a>

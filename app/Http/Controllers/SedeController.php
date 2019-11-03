@@ -39,7 +39,7 @@ class SedeController extends Controller
     public function store(Request $request)
     {
         //
-        DB::insert("call INSERT_SEDE('$request->idsede','$request->identificaciond','$request->idpais','$request->ciudad','$request->direccion','$request->telefono')");
+        DB::insert("call INSERT_SEDE('$request->identificaciond','$request->idpais','$request->ciudad','$request->direccion','$request->telefono')");
         return redirect('Sede');
     }
 
@@ -60,10 +60,10 @@ class SedeController extends Controller
      * @param  \App\Models\Sede  $sede
      * @return \Illuminate\Http\Response
      */
-    public function edit(Sede $sede)
+    public function edit($id)
     {
         //
-        $sed = Sede::find($sede);
+        $sed = Sede::find($id);
         return view('Sede/Edit',compact('sed'));
     }
 
@@ -87,10 +87,10 @@ class SedeController extends Controller
      * @param  \App\Models\Sede  $sede
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Sede $sede)
+    public function destroy($id)
     {
         //
-        DB::delete("call DELETE_SEDE('$sede')");
+        DB::delete("call DELETE_SEDE('$id')");
         return redirect('Sede');
     }
 }

@@ -19,11 +19,11 @@
               <div class="card">
                   <div class="card-header">
                     <div class="col-md-3 pull-right">
-                      <strong class="card-title">Pais</strong>
+                      <strong class="card-title">Responsable</strong>
                     </div>
                       <div class="col-md-3" style="margin-left:50%">
-                            <a href="{{route('pais_create')}}" class="btn btn-block btn-primary">
-                                    <i class="fa fa-fw fa-plus-circle"></i> Crear pais
+                            <a href="{{route('responsable_create')}}" class="btn btn-block btn-primary">
+                                    <i class="fa fa-fw fa-plus-circle"></i> Crear responsable
                             </a>
                           </div>
                   </div>
@@ -31,22 +31,24 @@
                       <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
                           <thead>
                               <tr>
-                                  <th>Id pais</th>
+                                  <th>Identificación</th>
                                   <th>Nombre</th>
-                                  <th>Nacionalidad </th>
+                                  <th>Primer Apellido </th>
+                                  <th>Segundo Apellido</th>
                                   <th>Acciones</th>
                               </tr>
                           </thead>
                           <tbody>
-                              @foreach ($pais as $item)
+                              @foreach ($responsable as $item)
                               <tr>
-                              <td>{{$item->idpais}}</td>    
+                              <td>{{$item->identificacion}}</td>    
                               <td>{{$item->nombre}}</td>
-                              <td>{{$item->nacionalidad}}</td>
+                              <td>{{$item->apellido1}}</td>
+                              <td>{{$item->apellido2}}</td>
                               <td>
-                                <a href="/Pais/{{$item->idpais}}/edit" class="btn btn-success">
+                                <a href="/Responsable/{{$item->identificacion}}/edit" class="btn btn-success">
                                     <i class="fa fa-pencil"></i></a>
-                                <form action="{{route('pais_delete', ['Pais' => $item->idpais])}}" method="POST">
+                                <form action="{{route('responsable_delete', ['Responsable' => $item->identificacion])}}" method="POST">
                                   @csrf <input name="_method" type="hidden" value="DELETE">
                                   <button type="submit" class="btn btn-danger">
                                       <i class="fa fa-trash"></i>

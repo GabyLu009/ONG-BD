@@ -54,3 +54,21 @@ Route::group(['prefix' => '/'], function () {
     Route::put('Pais/{Pais}','PaisController@update');
     Route::delete('Pais/{id}','PaisController@destroy')->name('pais_delete');
 });
+
+Route::group(['prefix' => '/'], function () {
+    Route::get('Responsable', 'ResponsableController@index');
+    Route::get('Responsable/create', 'ResponsableController@create')->name('responsable_create');
+    Route::post('Responsable/store', 'ResponsableController@store');
+    Route::get('Responsable/{Responsable}/edit', 'ResponsableController@edit')->name('responsable_edit');
+    Route::put('Responsable/{Responsable}','ResponsableController@update');
+    Route::delete('Responsable/{id}','ResponsableController@destroy')->name('responsable_delete');
+});
+
+Route::group(['prefix' => '/'], function () {
+    Route::get('Actuacion', 'ActuacionController@index');
+    Route::get('Actuacion/create', 'ActuacionController@create')->name('actuacion_create');
+    Route::post('Actuacion/store', 'ActuacionController@store');
+    Route::get('Actuacion/{Actuacion}/edit', 'ActuacionController@edit')->name('actuacion_edit');
+    Route::put('Actuacion/{Actuacion}','ActuacionController@update');
+    Route::delete('Actuacion/{id}','ActuacionController@destroy')->name('actuacion_delete');
+});
