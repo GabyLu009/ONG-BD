@@ -61,6 +61,15 @@
                                              <li><i class="fa fa-plus"></i><a href="/Actuacion/create">Añadir Actuación</a></li>   
                                           </ul>
                                         </li>
+
+                                        <li class="menu-item-has-children dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-clipboard"></i>Reportes</a>
+                                            <ul class="sub-menu children dropdown-menu">
+                                             <li><i class="fa fa-list"></i><a href="/Reportes">Lista Reportes</a></li>
+                                            
+                                          </ul>
+                                        </li>
+
             </ul>
         </div><!-- /.navbar-collapse -->
     </nav>

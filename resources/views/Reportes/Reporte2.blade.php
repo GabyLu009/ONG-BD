@@ -29,7 +29,7 @@
         <body>
         
                 <div id = "header">     
-                        <h1 class="box-title"> Reporte de Actuacion y Poblacion</h1>
+                        <h1 class="box-title"> Reporte de Maximo Presupuesto</h1>
                        </div>
                    <div id="footer">
                    </div>  
@@ -37,16 +37,16 @@
         <main>
    <table>
                     <tr>
-                    <th>Descripcion de la accion</th>
-                    <th>Nombre de la Poblacion</th>
-                    <th>Numero de Habitantes</th>
+                    <th>Codigo</th>
+                    <th>Titulo</th>
+                    <th>Presupuesto</th>
                   </tr>
                 </thead>
-                  @foreach ($rep1 as $item)
+                  @foreach ($rep2 as $item)
                     <tr>
-                    <td>{{$item->descripcion_accion}}</td> 
-                    <td>{{$item->nombre_poblacion}}</td>    
-                    <td>{{$item->habitantes}}</td>
+                    <td>{{$item->codigo}}</td> 
+                    <td>{{$item->titulo}}</td>    
+                    <td>{{$item->presupuesto}}</td>
                     </tr>
             @endforeach
     </table>

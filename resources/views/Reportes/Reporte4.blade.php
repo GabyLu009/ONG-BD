@@ -29,7 +29,7 @@
         <body>
         
                 <div id = "header">     
-                        <h1 class="box-title"> Reporte de Actuacion y Poblacion</h1>
+                        <h1 class="box-title"> Reporte Proyectos por Sede</h1>
                        </div>
                    <div id="footer">
                    </div>  
@@ -37,16 +37,28 @@
         <main>
    <table>
                     <tr>
-                    <th>Descripcion de la accion</th>
-                    <th>Nombre de la Poblacion</th>
-                    <th>Numero de Habitantes</th>
+                    <th>Codigo</th>
+                    <th>Titulo</th>
+                    <th>Nombre del Responsable</th>
+                    <th>Apellido del Responsable</th>
+                    <th>Fecha de Inicio</th>
+                    <th>Fecha de Finalizacion</th>
+                    <th>Estado del Proyecto</th>
+                    <th>Ciudad</th>
+                    <th>Pais</th>
                   </tr>
                 </thead>
-                  @foreach ($rep1 as $item)
+                  @foreach ($rep2 as $item)
                     <tr>
-                    <td>{{$item->descripcion_accion}}</td> 
-                    <td>{{$item->nombre_poblacion}}</td>    
-                    <td>{{$item->habitantes}}</td>
+                    <td>{{$item->codigo}}</td> 
+                    <td>{{$item->titulo}}</td>
+                    <td>{{$item->nombre_responsable}}</td>
+                    <td>{{$item->apellido_responsable}}</td>
+                    <td>{{$item->fecha_inicio}}</td>
+                    <td>{{$item->fecha_finalizacion}}</td>
+                    <td>{{$item->estado_proyecto}}</td>
+                    <td>{{$item->ciudad}}</td>
+                    <td>{{$item->pais}}</td>
                     </tr>
             @endforeach
     </table>

@@ -14,6 +14,19 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix' => '/'], function () {
+    Route::get('Reportes', 'reportes@index');
+    Route::get('Reportes1', 'reportes@generar')->name('reporte1');
+    Route::get('Reportes2', 'reportes@generar2')->name('reporte2');
+    Route::get('Reportes3', 'reportes@generar3')->name('reporte3');
+    Route::get('Reportes4', 'reportes@generar4')->name('reporte4');
+    Route::get('Reportes5', 'reportes@generar5')->name('reporte5');
+    Route::get('Reportes6', 'reportes@generar6')->name('reporte6');
+    Route::get('Reportes7', 'reportes@generar7')->name('reporte7');
+});
+
+
 Route::group(['prefix' => '/'], function () {
     Route::get('Director', 'Director1@index');
     Route::get('Director/create', 'Director1@create')->name('director_create');

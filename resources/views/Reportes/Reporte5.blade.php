@@ -29,7 +29,7 @@
         <body>
         
                 <div id = "header">     
-                        <h1 class="box-title"> Reporte de Actuacion y Poblacion</h1>
+                        <h1 class="box-title"> Reporte Sedes por Ciudad</h1>
                        </div>
                    <div id="footer">
                    </div>  
@@ -37,16 +37,18 @@
         <main>
    <table>
                     <tr>
-                    <th>Descripcion de la accion</th>
-                    <th>Nombre de la Poblacion</th>
-                    <th>Numero de Habitantes</th>
+                    <th>Nombre de Ciudad</th>
+                    <th>Nombere del Pais</th>
+                    <th>Direccion</th>
+                    <th>Nombre del Director</th>
                   </tr>
                 </thead>
-                  @foreach ($rep1 as $item)
+                  @foreach ($rep2 as $item)
                     <tr>
-                    <td>{{$item->descripcion_accion}}</td> 
-                    <td>{{$item->nombre_poblacion}}</td>    
-                    <td>{{$item->habitantes}}</td>
+                    <td>{{$item->ciudad}}</td> 
+                    <td>{{$item->pais}}</td>
+                    <td>{{$item->direccion}}</td>
+                    <td>{{$item->director}}</td>
                     </tr>
             @endforeach
     </table>
