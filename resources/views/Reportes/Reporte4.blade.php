@@ -45,10 +45,9 @@
                     <th>Fecha de Finalizacion</th>
                     <th>Estado del Proyecto</th>
                     <th>Ciudad</th>
-                    <th>Pais</th>
                   </tr>
                 </thead>
-                  @foreach ($rep2 as $item)
+                  @foreach ($rep22 as $item)
                     <tr>
                     <td>{{$item->codigo}}</td> 
                     <td>{{$item->titulo}}</td>
@@ -58,7 +57,6 @@
                     <td>{{$item->fecha_finalizacion}}</td>
                     <td>{{$item->estado_proyecto}}</td>
                     <td>{{$item->ciudad}}</td>
-                    <td>{{$item->pais}}</td>
                     </tr>
             @endforeach
     </table>

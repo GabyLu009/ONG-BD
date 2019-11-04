@@ -43,7 +43,7 @@
                     <th>Nombre del Director</th>
                   </tr>
                 </thead>
-                  @foreach ($rep2 as $item)
+                  @foreach ($rep7 as $item)
                     <tr>
                     <td>{{$item->ciudad}}</td> 
                     <td>{{$item->pais}}</td>

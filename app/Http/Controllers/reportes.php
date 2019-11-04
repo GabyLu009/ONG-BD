@@ -59,16 +59,16 @@ class reportes extends Controller
     }
     public function generar6()
     {
-        $rep2 = \DB::select('select * from proyectos_sede');
-        $view = view ('Reportes.Reporte4', compact('rep2'))->render();
+        $rep22 = \DB::select('select * from proyectos_sede');
+        $view = view ('Reportes.Reporte4', compact('rep22'))->render();
         $pdf = \App::make('dompdf.wrapper');
         $pdf->loadHTML($view);
         return $pdf->stream('Reporte4'.'.pdf');
     }
     public function generar7()
     {
-        $rep2 = \DB::select('select * from sedes_dir');
-        $view = view ('Reportes.Reporte5', compact('rep2'))->render();
+        $rep7 = \DB::select('select * from sedes_dir');
+        $view = view ('Reportes.Reporte5', compact('rep7'))->render();
         $pdf = \App::make('dompdf.wrapper');
         $pdf->loadHTML($view);
         return $pdf->stream('Reporte5'.'.pdf');
