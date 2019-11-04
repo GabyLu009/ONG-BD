@@ -75,7 +75,7 @@ class ActuacionController extends Controller
      * @param  \App\Models\Actuacion  $actuacion
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Actuacion $actuacion)
+    public function update(Request $request, Actuacion $id)
     {
         //
         DB::update("call UPDATE_ACTUACION('$request->idactuacion','$request->inversion','$request->descripcion','$request->idpoblacion','$request->codigop')");

@@ -50,7 +50,7 @@
                               <td>
                                 <a href="/actuacion/{{$item->idactuacion}}/edit" class="btn btn-success">
                                     <i class="fa fa-pencil"></i></a>
-                                <form action="{{route('actuacion_delete', ['Poblacion' => $item->idactuacion])}}" method="POST">
+                                <form action="{{route('actuacion_delete', ['Actuacion' => $item->idactuacion])}}" method="POST">
                                   @csrf <input name="_method" type="hidden" value="DELETE">
                                   <button type="submit" class="btn btn-danger">
                                       <i class="fa fa-trash"></i>

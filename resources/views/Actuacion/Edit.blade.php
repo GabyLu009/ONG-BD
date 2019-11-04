@@ -14,24 +14,24 @@
 
                                       <div class="row form-group">
                                         <div class="col col-md-3"><label for="Idactuacion" class=" form-control-label">Id poblacion </label></div>
-                                      <div class="col-12 col-md-9"><input type="text" id="idactuacion" name="idactuacion" class="form-control" value="{{old('idactuacion', $pob->idactuacion ?? '')}}" readonly></div>
+                                      <div class="col-12 col-md-9"><input type="text" id="idactuacion" name="idactuacion" class="form-control" value="{{old('idactuacion', $act->idactuacion ?? '')}}" readonly></div>
                                       </div>
                                           <div class="row form-group">
                                                 <div class="col col-md-3"><label for="Inversion" class=" form-control-label">Inversion</label></div>
-                                              <div class="col-12 col-md-9"><input type="text" id="inversion" name="inversion" class="form-control" value="{{old('idactuacion', $pob->inversion?? '')}}"></div>
+                                              <div class="col-12 col-md-9"><input type="text" id="inversion" name="inversion" class="form-control" value="{{old('idactuacion', $act->inversion?? '')}}"></div>
                                           </div>
                                           <div class="row form-group">
                                                       <div class="col col-md-3"><label for="Descripcion" class=" form-control-label">Descripcion</label></div>
-                                                    <div class="col-12 col-md-9"><input type="text" id="descripcion" name="descripcion" class="form-control" value="{{old('idactuacion', $pob->descripcion ?? '')}}"></div>
+                                                    <div class="col-12 col-md-9"><input type="text" id="descripcion" name="descripcion" class="form-control" value="{{old('idactuacion', $act->descripcion ?? '')}}"></div>
                                           </div>
                                           <div class="row form-group">
                                                       <div class="col col-md-3"><label for="Idpoblacion" class=" form-control-label">Id poblacion</label></div>
-                                                    <div class="col-12 col-md-9"><input type="text" id="idpoblacion" name="idpoblacion" class="form-control" value="{{old('idactuacion', $pob->idpoblacion ?? '')}}"></div>
+                                                    <div class="col-12 col-md-9"><input type="text" id="idpoblacion" name="idpoblacion" class="form-control" value="{{old('idactuacion', $act->idpoblacion ?? '')}}"></div>
                                          </div>
                                         </div>
                                         <div class="row form-group">
                                                     <div class="col col-md-3"><label for="Codigop" class=" form-control-label">Codigo p</label></div>
-                                                  <div class="col-12 col-md-9"><input type="text" id="codigop" name="codigop" class="form-control" value="{{old('idactuacion', $pob->codigop ?? '')}}"></div>
+                                                  <div class="col-12 col-md-9"><input type="text" id="codigop" name="codigop" class="form-control" value="{{old('idactuacion', $act->codigop ?? '')}}"></div>
                                        </div>
                                   </div>
                                   <div class="card-footer">
@@ -46,5 +46,4 @@
                               </div>
                           </div>
       </div> 
-</div>
 @endsection

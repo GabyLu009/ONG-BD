@@ -27,10 +27,7 @@
                                                           <div class="col col-md-3"><label for="Apellido2" class=" form-control-label">Segundo apellido</label></div>
                                                         <div class="col-12 col-md-9"><input type="text" id="apellido2" name="apellido2" class="form-control"></div>
                                              </div>
-                                             <div class="row form-group">
-                                                <div class="col col-md-3"><label for="Telefono" class=" form-control-label">Telefono</label></div>
-                                              <div class="col-12 col-md-9"><input type="text" id="telefono" name="telefono" class="form-control"></div>
-                                             </div>
+                                            
                                     
                                   </div>
                                   <div class="card-footer">

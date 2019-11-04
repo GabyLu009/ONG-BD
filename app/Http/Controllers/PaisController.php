@@ -75,7 +75,7 @@ class PaisController extends Controller
      * @param  \App\Models\Pais  $pais
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Pais $pais)
+    public function update(Request $request,  $id)
     {
         //
         DB::update("call UPDATE_PAIS('$request->idpais','$request->nombre','$request->nacionalidad')");
