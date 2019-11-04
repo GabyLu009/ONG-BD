@@ -72,3 +72,6 @@ Route::group(['prefix' => '/'], function () {
     Route::put('Actuacion/{Actuacion}','ActuacionController@update');
     Route::delete('Actuacion/{id}','ActuacionController@destroy')->name('actuacion_delete');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
