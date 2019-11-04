@@ -12,7 +12,7 @@
                                       @csrf
 
                                       <div class="row form-group">
-                                            <div class="col col-md-3"><label for="Identificacion" class=" form-control-label">Identificación </label></div>
+                                            <div class="col col-md-3"><label for="Identificacion" class=" form-control-label">Identificación del responsable </label></div>
                                           <div class="col-12 col-md-9"><input type="text" id="identificacion" name="identificacion" class="form-control"></div>
                                           </div>
                                               <div class="row form-group">

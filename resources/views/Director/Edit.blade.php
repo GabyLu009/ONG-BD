@@ -5,7 +5,7 @@
                   <div class="col-lg-6">
                               <div class="card">
                                   <div class="card-header">
-                                      <strong>Editar Director</strong>
+                                      <strong>Editar director</strong>
                                   </div>
                                   <div class="card-body card-block">
                                     <form class="form-horizontal" method="POST" action="/Director/{{$dir->identificacion}}" class="form-horizontal">
@@ -13,7 +13,7 @@
                                         @csrf
 
                                       <div class="row form-group">
-                                        <div class="col col-md-3"><label for="Identificacion" class=" form-control-label">Identificacion </label></div>
+                                        <div class="col col-md-3"><label for="Identificacion" class=" form-control-label">Identificación del director</label></div>
                                       <div class="col-12 col-md-9"><input type="text" id="identificacion" name="identificacion" class="form-control" value="{{old('identificacion', $dir->identificacion ?? '')}}" readonly></div>
                                       </div>
                                           <div class="row form-group">

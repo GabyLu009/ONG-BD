@@ -13,20 +13,20 @@
 
                                      
                                               <div class="row form-group">
-                                                    <div class="col col-md-3"><label for="Inversion" class=" form-control-label">Inversion</label></div>
+                                                    <div class="col col-md-3"><label for="Inversion" class=" form-control-label">Inversión del proyecto</label></div>
                                                   <div class="col-12 col-md-9"><input type="text" id="inversion" name="inversion" class="form-control"></div>
                                               </div>
                                               <div class="row form-group">
-                                                          <div class="col col-md-3"><label for="Descripcion" class=" form-control-label">Descripcion</label></div>
+                                                          <div class="col col-md-3"><label for="Descripcion" class=" form-control-label">Descripción de la actuación</label></div>
                                                         <div class="col-12 col-md-9"><input type="text" id="descripcion" name="descripcion" class="form-control"></div>
                                               </div>
                                               <div class="row form-group">
-                                                          <div class="col col-md-3"><label for="Idpoblacion" class=" form-control-label">Id poblacion</label></div>
+                                                          <div class="col col-md-3"><label for="Idpoblacion" class=" form-control-label">Id de la población</label></div>
                                                         <div class="col-12 col-md-9"><input type="text" id="idpoblacion" name="idpoblacion" class="form-control"></div>
                                              </div>
                                             </div>
                                             <div class="row form-group">
-                                                        <div class="col col-md-3"><label for="Codigop" class=" form-control-label">Codigo Proyecto</label></div>
+                                                        <div class="col col-md-3"><label for="Codigop" class=" form-control-label">Código del proyecto</label></div>
                                                       <div class="col-12 col-md-9"><input type="text" id="codigop" name="codigop" class="form-control"></div>
                                            </div>
 

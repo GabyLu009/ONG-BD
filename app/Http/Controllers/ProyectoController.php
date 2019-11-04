@@ -75,7 +75,7 @@ class ProyectoController extends Controller
      * @param  \App\Models\Proyecto  $proyecto
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Proyecto $proyecto)
+    public function update(Request $request)
     {
         //
         DB::update("call UPDATE_PROYECTO('$request->codigo','$request->titulo','$request->fechainicio','$request->fechafinalizacion','$request->presupuesto','$request->idsede','$request->identificacionr','$request->estado')");

@@ -13,7 +13,7 @@
                                         @csrf
                                        
                                       <div class="row form-group">
-                                        <div class="col col-md-3"><label for="Identificacion" class=" form-control-label">Identificación </label></div>
+                                        <div class="col col-md-3"><label for="Identificacion" class=" form-control-label">Identificación del responsable </label></div>
                                       <div class="col-12 col-md-9"><input type="text" id="identificacion" name="identificacion" class="form-control" value="{{old('identificacion', $res->identificacion ?? '')}}" readonly></div>
                                       </div>
                                           <div class="row form-group">
@@ -25,13 +25,9 @@
                                                     <div class="col-12 col-md-9"><input type="text" id="apellido1" name="apellido1" class="form-control" value="{{old('identificacion', $res->apellido1 ?? '')}}"></div>
                                           </div>
                                           <div class="row form-group">
-                                                      <div class="col col-md-3"><label for="Apellido2" class=" form-control-label">Sefundo Apellido</label></div>
+                                                      <div class="col col-md-3"><label for="Apellido2" class=" form-control-label">Segundo apellido</label></div>
                                                     <div class="col-12 col-md-9"><input type="text" id="apellido2" name="apellido2" class="form-control" value="{{old('identificacion', $res->apellido2 ?? '')}}"></div>
                                          </div>
-                                         <div class="row form-group">
-                                            <div class="col col-md-3"><label for="Telefono" class=" form-control-label">Telefono</label></div>
-                                          <div class="col-12 col-md-9"><input type="text" id="telefono" name="telefono" class="form-control" value="{{old('idsede', $sed->telefono ?? '')}}"></div>
-                               </div>
                                   </div>
                                   <div class="card-footer">
                                       <button type="reset" class="btn btn-danger btn-sm">

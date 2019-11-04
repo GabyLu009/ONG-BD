@@ -31,7 +31,7 @@
                       <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
                           <thead>
                               <tr>
-                                  <th>Identificación</th>
+                                  <th>Identificación del responsable</th>
                                   <th>Nombre</th>
                                   <th>Primer Apellido </th>
                                   <th>Segundo Apellido</th>

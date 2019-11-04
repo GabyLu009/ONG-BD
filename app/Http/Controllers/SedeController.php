@@ -49,7 +49,7 @@ class SedeController extends Controller
      * @param  \App\Models\Sede  $sede
      * @return \Illuminate\Http\Response
      */
-    public function show(Sede $sede)
+    public function show($id)
     {
         //
     }
@@ -74,7 +74,7 @@ class SedeController extends Controller
      * @param  \App\Models\Sede  $sede
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Sede $sede)
+    public function update(Request $request, $id)
     {
         //
         DB::update("call UPDATE_SEDE('$request->idsede','$request->identificaciond','$request->idpais','$request->ciudad','$request->direccion','$request->telefono')");

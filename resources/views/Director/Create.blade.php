@@ -11,7 +11,7 @@
                                     <form class="form-horizontal" method="POST" action="/Director/store" class="form-horizontal">
                                       @csrf
                                       <div class="row form-group">
-                                        <div class="col col-md-3"><label for="Identificacion" class=" form-control-label">Identificacion</label></div>
+                                        <div class="col col-md-3"><label for="Identificacion" class=" form-control-label">Identificación del director</label></div>
                                       <div class="col-12 col-md-9"><input type="text" id="identificacion" name="identificacion" class="form-control"></div>
                                       </div>
                                           <div class="row form-group">

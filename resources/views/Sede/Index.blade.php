@@ -31,12 +31,12 @@
                       <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
                           <thead>
                               <tr>
-                                  <th>Id sede</th>
-                                  <th>Identificación</th>
-                                  <th>Id país</th>
+                                  <th>Id de la sede</th>
+                                  <th>Identificación del director</th>
+                                  <th>Id del país</th>
                                   <th>Ciudad</th>
                                   <th>Dirección</th>
-                                  <th>Telefono</th>
+                                  <th>Teléfono</th>
                                   <th>Acciones</th>
                               </tr>
                           </thead>

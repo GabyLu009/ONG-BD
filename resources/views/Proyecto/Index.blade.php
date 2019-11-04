@@ -31,13 +31,13 @@
                       <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
                           <thead>
                               <tr>
-                                  <th>Código</th>
+                                  <th>Código del proyecto</th>
                                   <th>Titulo</th>
                                   <th>Fecha de inicio</th>
                                   <th>Fecha finalizacion</th>
-                                  <th>Presupuesto</th>
+                                  <th>Presupuesto del proyecto</th>
                                   <th>Id sede</th>
-                                  <th>Identificacion R</th>
+                                  <th>Identificacion  del responsable</th>
                                   <th>Estado</th>
                                   <th>Acciones</th>
                               </tr>

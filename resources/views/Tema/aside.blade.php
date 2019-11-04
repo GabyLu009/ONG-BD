@@ -48,17 +48,17 @@
                                   </ul>
                                 </li>
                                 <li class="menu-item-has-children dropdown">
-                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-group"></i>Poblacion</a>
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-group"></i>Población</a>
                                         <ul class="sub-menu children dropdown-menu">
-                                         <li><i class="fa fa-list"></i><a href="/Poblacion">Lista Poblacion</a></li>
-                                         <li><i class="fa fa-plus"></i><a href="/Poblacion/create">Añadir Poblacion</a></li>   
+                                         <li><i class="fa fa-list"></i><a href="/Poblacion">Lista Población</a></li>
+                                         <li><i class="fa fa-plus"></i><a href="/Poblacion/create">Añadir Población</a></li>   
                                       </ul>
                                     </li>
                                     <li class="menu-item-has-children dropdown">
-                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-clipboard"></i>Actuacion</a>
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-clipboard"></i>Actuación</a>
                                             <ul class="sub-menu children dropdown-menu">
-                                             <li><i class="fa fa-list"></i><a href="/Actuacion">Lista Actuacion</a></li>
-                                             <li><i class="fa fa-plus"></i><a href="/Actuacion/create">Añadir Actuacion</a></li>   
+                                             <li><i class="fa fa-list"></i><a href="/Actuacion">Lista Actuación</a></li>
+                                             <li><i class="fa fa-plus"></i><a href="/Actuacion/create">Añadir Actuación</a></li>   
                                           </ul>
                                         </li>
             </ul>

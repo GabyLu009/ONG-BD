@@ -16,11 +16,11 @@
                                           <div class="col-12 col-md-9"><input type="text" id="idsede" name="idsede" class="form-control" value="{{old('idsede', $sed->idsede ?? '')}}" readonly></div>
                                           </div>
                                       <div class="row form-group">
-                                        <div class="col col-md-3"><label for="Identificaciond" class=" form-control-label">Identificación </label></div>
+                                        <div class="col col-md-3"><label for="Identificaciond" class=" form-control-label">Identificación del director </label></div>
                                       <div class="col-12 col-md-9"><input type="text" id="identificaciond" name="identificaciond" class="form-control" value="{{old('idsede', $sed->identificaciond ?? '')}}" readonly></div>
                                       </div>
                                           <div class="row form-group">
-                                                <div class="col col-md-3"><label for="Idpais" class=" form-control-label">Id país</label></div>
+                                                <div class="col col-md-3"><label for="Idpais" class=" form-control-label">Id del país</label></div>
                                               <div class="col-12 col-md-9"><input type="text" id="idpais" name="idpais" class="form-control" value="{{old('idsede', $sed->idpais ?? '')}}"></div>
                                           </div>
                                           <div class="row form-group">
@@ -28,11 +28,11 @@
                                                     <div class="col-12 col-md-9"><input type="text" id="ciudad" name="ciudad" class="form-control" value="{{old('idsede', $sed->ciudad ?? '')}}"></div>
                                           </div>
                                           <div class="row form-group">
-                                                      <div class="col col-md-3"><label for="Direccion" class=" form-control-label">Direccion</label></div>
+                                                      <div class="col col-md-3"><label for="Direccion" class=" form-control-label">Dirección</label></div>
                                                     <div class="col-12 col-md-9"><input type="text" id="direccion" name="direccion" class="form-control" value="{{old('idsede', $sed->direccion ?? '')}}"></div>
                                          </div>
                                          <div class="row form-group">
-                                            <div class="col col-md-3"><label for="Telefono" class=" form-control-label">Telefono</label></div>
+                                            <div class="col col-md-3"><label for="Telefono" class=" form-control-label">Teléfono</label></div>
                                           <div class="col-12 col-md-9"><input type="text" id="telefono" name="telefono" class="form-control" value="{{old('idsede', $sed->telefono ?? '')}}"></div>
                                </div>
                                   </div>

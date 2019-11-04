@@ -31,11 +31,11 @@
                       <table id="bootstrap-data-table-export" class="table table-striped table-bordered">
                           <thead>
                               <tr>
-                                <th>Id actuacion</th>
-                                  <th>Inversión</th>
-                                  <th>Descripcion</th>
-                                  <th>Id de la poblacion </th>
-                                  <th>Codigo p</th>
+                                <th>Id de la actuación</th>
+                                  <th>Inversión del proyecto</th>
+                                  <th>Descripción de la actuación</th>
+                                  <th>Id de la población </th>
+                                  <th>Código del proyecto</th>
                                   <th>Acciones</th>
                               </tr>
                           </thead>
@@ -45,10 +45,10 @@
                              <td>{{$item->idactuacion}}</td>
                               <td>{{$item->inversion}}</td>    
                               <td>{{$item->descripcion}}</td>
-                              <td>{{$item->idPoblacion}}</td>
-                              <td>{{$item->codigoP}}</td>
+                              <td>{{$item->idpoblacion}}</td>
+                              <td>{{$item->codigop}}</td>
                               <td>
-                                <a href="/actuacion/{{$item->idactuacion}}/edit" class="btn btn-success">
+                                <a href="/Actuacion/{{$item->idactuacion}}/edit" class="btn btn-success">
                                     <i class="fa fa-pencil"></i></a>
                                 <form action="{{route('actuacion_delete', ['Actuacion' => $item->idactuacion])}}" method="POST">
                                   @csrf <input name="_method" type="hidden" value="DELETE">

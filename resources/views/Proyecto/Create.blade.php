@@ -13,7 +13,7 @@
 
 
                                       <div class="row form-group">
-                                        <div class="col col-md-3"><label for="Codigo" class=" form-control-label">Codigo</label></div>
+                                        <div class="col col-md-3"><label for="Codigo" class=" form-control-label">Codigo del proyecto</label></div>
                                       <div class="col-12 col-md-9"><input type="text" id="codigo" name="codigo" class="form-control"></div>
                                       </div>
                                       <div class="row form-group">
@@ -22,14 +22,14 @@
                                         </div>
                                     <div class="row form-group">
                                       <div class="col col-md-3"><label for="Fechainicio" class=" form-control-label">Fecha de inicio </label></div>
-                                    <div class="col-12 col-md-9"><input type="text" id="fechainicio" name="fechainicio" class="form-control"></div>
+                                    <div class="col-12 col-md-9"><input type="date" id="fechainicio" name="fechainicio" class="form-control"></div>
                                     </div>
                                         <div class="row form-group">
                                               <div class="col col-md-3"><label for="Fechafinalizacion" class=" form-control-label">Fecha de finalizacion</label></div>
-                                            <div class="col-12 col-md-9"><input type="text" id="fechafinalizacion" name="fechafinalizacion" class="form-control"></div>
+                                            <div class="col-12 col-md-9"><input type="date" id="fechafinalizacion" name="fechafinalizacion" class="form-control"></div>
                                         </div>
                                         <div class="row form-group">
-                                                    <div class="col col-md-3"><label for="Presupuesto" class=" form-control-label">Presupuesto</label></div>
+                                                    <div class="col col-md-3"><label for="Presupuesto" class=" form-control-label">Presupuesto del proyecto</label></div>
                                                   <div class="col-12 col-md-9"><input type="text" id="presupuesto" name="presupuesto" class="form-control"></div>
                                         </div>
 
@@ -39,15 +39,28 @@
                                         </div>
 
                                         <div class="row form-group">
-                                          <div class="col col-md-3"><label for="Identificacionr" class=" form-control-label">Identificación R </label></div>
+                                          <div class="col col-md-3"><label for="Identificacionr" class=" form-control-label">Identificación del responsable</label></div>
                                         <div class="col-12 col-md-9"><input type="text" id="identificacionr" name="identificacionr" class="form-control"></div>
                                         </div>
 
-                                        <div class="row form-group">
+                                        {{-- <div class="row form-group">
                                                     <div class="col col-md-3"><label for="Estado" class=" form-control-label">Estado</label></div>
                                                   <div class="col-12 col-md-9"><input type="text" id="estado" name="estado" class="form-control"></div>
-                                       </div>
- 
+                                       </div> --}}
+
+                                       <div class="form-group">
+                                          <label for="Estado" class="col-sm-2 control-label">Estado</label>
+                                          <div class="btn-group-horizontal">
+                                         <input type="radio"name="estado" id="estado" value="A">A  
+                                         <input type="radio" name="estado"  id="estado" value="I" > I
+                                         <input type="radio" name="estado" id="estado" value="C" > C
+                                        
+                                      </div>
+                                      </div>
+
+
+
+
                                   </div>
                                   <div class="card-footer">
                                       <button type="reset" class="btn btn-danger btn-sm">
